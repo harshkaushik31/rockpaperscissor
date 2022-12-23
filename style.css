@@ -4,8 +4,13 @@
 }
 nav{
     background-color: turquoise;
-    height: 2rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -18,12 +23,17 @@ main{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 2rem;
+    align-content: center;
 }
 #result{
-    font-size: 5rem;
+    font-size: 4rem;
+    margin: auto;
 }
 #computer-choice{
     font-size: 2rem;
+    margin-left: 1rem;
+    align-self: center;
 }
 .buttons{
     display: flex;
@@ -43,25 +53,7 @@ button{
     width: 7rem;
     overflow: hidden;
 }
-.result{
-    transition-duration: 5s;
-    -moz-transition-duration: 5s;
-    animation-name: grow;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -moz-animation-name: grow;
-    -moz-animation-duration: 7s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
 
-}
-
-@keyframes grow {
-    0% { transform: scale(1); }
-    50% { transform: scale(2); }
-    100% { transform: scale(1); }
-}
 .reset{
     margin-top: 1rem;
     padding: 0;
